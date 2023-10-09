@@ -1,0 +1,37 @@
+/* PhoneVertical.css */
+
+/* Style for the greeting text */
+.greeting {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Style for the graphic placeholders and goal text container */
+.goal-container {
+  background-color: #5c1fa1; /* Darker background color */
+  padding: 20px; /* Add some padding to the container */
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Style for the graphic placeholders */
+.graphic-placeholder {
+  width: 200px;
+  height: 200px;
+  background-color: #fff; /* White placeholder background */
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/* Style for the progress text */
+.progress-text {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 20px;
+}

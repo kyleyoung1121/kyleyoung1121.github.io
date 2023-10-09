@@ -1,0 +1,84 @@
+/* BikeHorizontal.css */
+
+/* Grey background */
+body {
+  width: 1400px;
+  height: 389px;
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 1%;
+  position: relative; /* Make the container a positioning context for absolute positioning */
+}
+
+/* Style for the bike static UI image */
+.bike-static-ui {
+  position: absolute; /* Position the image absolutely within the container */
+  top: 0px; /* Adjust the top position as needed */
+  left: 0px; /* Adjust the left position as needed */
+  width: 1400px; /* Adjust the width as needed */
+  height: 389px; /* Adjust the height as needed */
+  background-image: url('assets/bike_ui.png');
+  background-size: 1400px 389px; /* Ensure the image covers the entire rectangle */
+  background-position: 0px 0px; /* Adjust the image offset using pixel values */
+}
+
+/* Style for the bike static UI image */
+.bike-battery {
+  position: absolute; /* Position the image absolutely within the container */
+  top: 0px; /* Adjust the top position as needed */
+  left: 0px; /* Adjust the left position as needed */
+  width: 1400px; /* Adjust the width as needed */
+  height: 389px; /* Adjust the height as needed */
+  background-image: url('assets/battery_3.png');
+  background-size: 1400px 389px; /* Ensure the image covers the entire rectangle */
+  background-position: 0px 0px; /* Adjust the image offset using pixel values */
+}
+
+/* Style for the bike static UI image */
+.bike-headlights {
+  position: absolute; /* Position the image absolutely within the container */
+  top: 0px; /* Adjust the top position as needed */
+  left: 0px; /* Adjust the left position as needed */
+  width: 1400px; /* Adjust the width as needed */
+  height: 389px; /* Adjust the height as needed */
+  background-image: url('assets/led_bar_off.png');
+  background-size: 1400px 389px; /* Ensure the image covers the entire rectangle */
+  background-position: 0px 0px; /* Adjust the image offset using pixel values */
+}
+
+/* Style for the bike static UI image */
+.bike-brakes {
+  position: absolute; /* Position the image absolutely within the container */
+  top: -22px; /* Adjust the top position as needed */
+  left: 0px; /* Adjust the left position as needed */
+  width: 1400px; /* Adjust the width as needed */
+  height: 400px; /* Adjust the height as needed */
+  background-image: url('assets/brakes_unpressed.png');
+  background-size: 1400px 420px; /* Ensure the image covers the entire rectangle */
+  background-position: 0px 0px; /* Adjust the image offset using pixel values */
+}
+
+/* Style for the bike static UI image */
+.bike-accelerate {
+  position: absolute; /* Position the image absolutely within the container */
+  top: -22px; /* Adjust the top position as needed */
+  left: 0px; /* Adjust the left position as needed */
+  width: 1400px; /* Adjust the width as needed */
+  height: 400px; /* Adjust the height as needed */
+  background-image: url('assets/accelerator_unpressed.png');
+  background-size: 1400px 420px; /* Ensure the image covers the entire rectangle */
+  background-position: 0px 0px; /* Adjust the image offset using pixel values */
+}
+
+/* Style for the vertical phone */
+.phone-vertical {
+  width: 350px;
+  height: 705px;
+  background-color: #9370DB; /* Light purple background color */
+  border-radius: 15px;
+  border: 10px solid #333; /* Dark grey border */
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  margin: auto;
+  margin-bottom: 1%;
+}

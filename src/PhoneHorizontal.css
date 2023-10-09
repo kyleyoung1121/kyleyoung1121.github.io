@@ -1,0 +1,121 @@
+/* PhoneHorizontal.css */
+
+/* Grey background */
+body {
+  width: 705px; /* Set a fixed width */
+  height: 350px; /* Set a fixed height */
+  background-image: url('assets/uc_campus_screenshot.png'); /* Replace 'path/to/your/map-image.png' with the actual image path */
+  background-size: 2500px 2500px; /* Ensure the image covers the entire rectangle */
+  background-position: -82px 1600px; /* Adjust the image offset using pixel values */
+  border: 10px solid #333; /* Dark grey border */
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  margin: auto;
+  margin-bottom: 1%;
+  position: relative;
+}
+
+/* Style for the notifications bar */
+.notifications-bar {
+  width: 100%;
+  height: 20px; /* Adjust the height as needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: #fff; /* Text color for notifications */
+  position: absolute;
+  top: 0px; /* Set y-coordinate */
+  font-size: 14px; /* Adjust the font size as needed */
+  white-space: pre; /* Preserve leading spaces */
+}
+
+/* Style for the blue dot */
+.blue-dot {
+  width: 20px; /* Adjust the size of the blue dot as needed */
+  height: 20px;
+  background-color: #007bff; /* Blue color */
+  border-radius: 50%; /* Makes it a circle */
+  position: absolute;
+  top: 50%; /* Vertically center */
+  left: 50%; /* Horizontally center */
+  transform: translate(-50%, 250%); /* Center the dot precisely */
+}
+
+/* Style for the white square box */
+.eta-box {
+  width: 75px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  position: absolute;
+  left: 3px; /* Set x-coordinate */
+  top: 245px; /* Set y-coordinate */
+}
+
+/* Style for the white square box */
+.duration-box {
+  width: 75px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  position: absolute;
+  left: 3px; /* Set x-coordinate */
+  top: 297px; /* Set y-coordinate */
+}
+
+/* Style for the white square box */
+.speed-box {
+  width: 75px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  position: absolute;
+  left: 627px; /* Set x-coordinate */
+  top: 297px; /* Set y-coordinate */
+}
+
+/* Style for the white square box */
+.directions-box {
+  width: 75px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  position: absolute;
+  left: 627px; /* Set x-coordinate */
+  top: 245px; /* Set y-coordinate */
+}
+
+/* Style for the arrow symbol */
+.arrow {
+  font-weight: bold;
+  font-size: 18px;
+}
