@@ -5,6 +5,34 @@ import './PhoneHorizontal.css';
 
 function PhoneHorizontal({speed, distance, setDistance}) {
   const [mapOffset, setMapOffset] = useState(0);
+  const [timer, setTimer] = useState(0);
+  const [timeOfDay, setTimeOfDay] = useState('00:00'); // Initial value
+  
+   // Update the time of day every second
+   useEffect(() => {
+    const interval = setInterval(() => {
+      setTimeOfDay(getCurrentTime());
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  // Helper function to format the current time as HH:MM
+  function getCurrentTime() {
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+    return `${hours}:${minutes}`;
+  }
+
+  // Update the timer every second
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTimer((prevTimer) => (prevTimer + 1) % 3600); // 3600 seconds = 1 hour
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
     let interval;
@@ -12,8 +40,9 @@ function PhoneHorizontal({speed, distance, setDistance}) {
     // Start the interval when the component mounts
     if (speed > 0) {
       interval = setInterval(() => {
+        
         // Update the distance based on speed (distance += speed / 10, assuming 0.1-second intervals)
-        const newDistance = distance + speed / 1;
+        const newDistance = distance + speed / 5;
         
         const clampedDistance = newDistance > 190 ? 0 : newDistance;
 
@@ -29,6 +58,10 @@ function PhoneHorizontal({speed, distance, setDistance}) {
     }
   }, [speed, distance, setDistance]);
   
+  // Calculate the timer display in HH:MM format
+  const timerDisplay = `${String(Math.floor(timer / 60)).padStart(2, '0')}:${String(timer % 60).padStart(2, '0')}`;
+
+  
   const mapBackgroundStyle = {
     backgroundPositionY: `${-260+mapOffset}px`,
   };
@@ -36,14 +69,14 @@ function PhoneHorizontal({speed, distance, setDistance}) {
   return (
     <div className="phone-horizontal" style={mapBackgroundStyle}>
 
-      <div className="notifications-bar"> 12:41</div>
+      <div className="notifications-bar">{"  " + timeOfDay}</div>
 
       <div className="blue-dot"></div>
         <div className="eta-box">
           <p>12 min</p>
         </div>
         <div className="duration-box">
-          <p>06:12</p>
+          <p>{timerDisplay}</p>
         </div>
         <div className="speed-box">
           <p>{speed} mph</p>

@@ -4,6 +4,14 @@ import React from 'react';
 import './PhoneVertical.css';
 
 function PhoneVertical({distance}) {
+
+  const progressPercentage = (distance / 6).toFixed(2);
+
+  // Define an inline style for rotation
+  const rotationStyle = {
+    transform: `rotate(${progressPercentage*2.5+10}deg)`,
+  };
+
   return (
     <div className="phone-vertical">
 
@@ -11,16 +19,13 @@ function PhoneVertical({distance}) {
           <p>Good Morning, Kyle!</p>
         </div>
         <div className="goal-container">
-          <div className="graphic-placeholder">
-            {/* Placeholder for your graphic */}
-          </div>
+          <div className="goal-progess-spinner" style={rotationStyle}></div>
+          <div className="goal-progess-cutout"></div>
           <div className="progress-text">
-            <p>You have cycled {distance/100}% of your goal</p>
+            <p>You have cycled {progressPercentage}% of your goal</p>
           </div>
         </div>
-        <div className="graphic-placeholder">
-          {/* Placeholder for your graphic */}
-        </div>
+        <div className="weekly-summary"></div>
 
     </div>
   );
