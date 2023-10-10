@@ -33,13 +33,25 @@
 }
 
 /* Style for the bike static UI image */
-.bike-headlights {
+.bike-headlights-on {
   position: absolute; /* Position the image absolutely within the container */
   top: 45px; /* Adjust the top position as needed */
   left: 639px; /* Adjust the left position as needed */
   width: 833px; /* Adjust the width as needed */
   height: 31px; /* Adjust the height as needed */
-  background-image: url('assets/bike_ui_parts/headlight.png');
+  background-image: url('assets/bike_ui_parts/headlight-on.png');
+  background-size: 65% 65%;
+  background-repeat: no-repeat;
+}
+
+/* Style for the bike static UI image */
+.bike-headlights-off {
+  position: absolute; /* Position the image absolutely within the container */
+  top: 45px; /* Adjust the top position as needed */
+  left: 639px; /* Adjust the left position as needed */
+  width: 833px; /* Adjust the width as needed */
+  height: 31px; /* Adjust the height as needed */
+  background-image: url('assets/bike_ui_parts/headlight-off.png');
   background-size: 65% 65%;
   background-repeat: no-repeat;
 }
@@ -54,6 +66,12 @@
   background-image: url('assets/bike_ui_parts/headlight_button.png');
   background-size: 65% 65%;
   background-repeat: no-repeat;
+  opacity: 1;
+}
+
+/* Style for the bike static UI image */
+.bike-headlights-button:hover {
+  opacity: 0.8;
 }
 
 /* Style for the bike static UI image */
