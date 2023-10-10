@@ -10,7 +10,6 @@
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   margin: auto;
-  margin-bottom: 1%;
   position: relative;
 }
 
@@ -72,6 +71,17 @@
   width: 977px; /* Set the initial width to 100% */
   height: 430px; /* Set the height as needed */
   background-image: url('src/assets/health_app_images/weekly_summary.png');
+  background-size: 35% 35%;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.previous-trip {
+  top: 591px; /* Adjust the top position as needed */
+  left: 4px; /* Adjust the left position as needed */
+  width: 977px; /* Set the initial width to 100% */
+  height: 325px; /* Set the height as needed */
+  background-image: url('src/assets/health_app_images/previous_trip.png');
   background-size: 35% 35%;
   background-repeat: no-repeat;
   position: absolute;

@@ -26,6 +26,7 @@ function PhoneVertical({distance}) {
           </div>
         </div>
         <div className="weekly-summary"></div>
+        <div className="previous-trip"></div>
 
     </div>
   );
