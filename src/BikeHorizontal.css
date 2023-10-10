@@ -86,6 +86,30 @@
   background-repeat: no-repeat;
 }
 
+.bike-music-button:hover {
+  opacity: 0.8;
+}
+
+/* Style for the white square box */
+.bike-music-text {
+  width: 175px;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #0f0f0f;
+  position: absolute;
+  left: 1050px; /* Set x-coordinate */
+  top: 400px; /* Set y-coordinate */
+}
+
+.bike-music-text-hidden {
+  font-size: 0px;
+}
+
 /* Style for the bike static UI image */
 .bike-gear-indicator {
   position: absolute; /* Position the image absolutely within the container */
@@ -99,15 +123,26 @@
 }
 
 /* Style for the bike static UI image */
-.bike-speedometer {
+.bike-speedometer-0 {
   position: absolute; /* Position the image absolutely within the container */
   top: 185px; /* Adjust the top position as needed */
   left: 1068px; /* Adjust the left position as needed */
   width: 73px; /* Adjust the width as needed */
   height: 120px; /* Adjust the height as needed */
-  background-image: url('assets/bike_ui_parts/zero.png');
   background-size: 65% 65%;
   background-repeat: no-repeat;
+  background-image: url('assets/bike_ui_parts/zero.png');
+}
+
+.bike-speedometer-5 {
+  position: absolute; /* Position the image absolutely within the container */
+  top: 185px; /* Adjust the top position as needed */
+  left: 1068px; /* Adjust the left position as needed */
+  width: 73px; /* Adjust the width as needed */
+  height: 120px; /* Adjust the height as needed */
+  background-size: 65% 65%;
+  background-repeat: no-repeat;
+  background-image: url('assets/bike_ui_parts/five.png');
 }
 
 /* Style for the bike static UI image */
@@ -122,6 +157,10 @@
   background-repeat: no-repeat;
 }
 
+.bike-brakes:hover {
+  opacity: 0.8;
+}
+
 /* Style for the bike static UI image */
 .bike-accelerate {
   position: absolute; /* Position the image absolutely within the container */
@@ -134,9 +173,6 @@
   background-repeat: no-repeat;
 }
 
-/* Style for the bike accelerator when hovered */
-.bike-accelerate-hover {
-  /* Add your hover effect styles here */
-  opacity: 0.4; /* For example, reduce opacity to 80% on hover */
-  /* Add any other desired styles */
+.bike-accelerate:hover {
+  opacity: 0.8;
 }

@@ -3,7 +3,7 @@
 import React from 'react';
 import './PhoneVertical.css';
 
-function PhoneVertical() {
+function PhoneVertical({distance}) {
   return (
     <div className="phone-vertical">
 
@@ -15,7 +15,7 @@ function PhoneVertical() {
             {/* Placeholder for your graphic */}
           </div>
           <div className="progress-text">
-            <p>You have cycled 66% of your goal</p>
+            <p>You have cycled {distance/100}% of your goal</p>
           </div>
         </div>
         <div className="graphic-placeholder">

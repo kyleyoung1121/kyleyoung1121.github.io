@@ -1,9 +1,9 @@
 // PhoneHorizontal.jsx
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './PhoneHorizontal.css';
 
-function PhoneHorizontal() {
+function PhoneHorizontal({speed, distance}) {
   return (
     <div className="phone-horizontal">
 
@@ -17,7 +17,7 @@ function PhoneHorizontal() {
           <p>06:12</p>
         </div>
         <div className="speed-box">
-          <p>11 mph</p>
+          <p>{speed} mph</p>
         </div>
         <div className="directions-box">
           <p>50 ft <span className="arrow">→</span></p>
