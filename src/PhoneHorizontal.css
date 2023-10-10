@@ -1,19 +1,18 @@
 /* PhoneHorizontal.css */
 
-/* Grey background */
-body {
-  width: 705px; /* Set a fixed width */
-  height: 350px; /* Set a fixed height */
-  background-image: url('assets/uc_campus_screenshot.png'); /* Replace 'path/to/your/map-image.png' with the actual image path */
-  background-size: 2500px 2500px; /* Ensure the image covers the entire rectangle */
-  background-position: -82px 1600px; /* Adjust the image offset using pixel values */
-  border: 10px solid #333; /* Dark grey border */
+.phone-horizontal {
+  width: 705px;
+  height: 350px;
+  background-image: url('assets/uc_campus_screenshot.png');
+  background-position-x: -440px;
+  background-position-y: -260px;
+  background-size: 200%;
   border-radius: 15px;
+  border: 10px solid #333; /* Dark grey border */
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   margin: auto;
   margin-bottom: 1%;
-  position: relative;
 }
 
 /* Style for the notifications bar */
@@ -28,7 +27,7 @@ body {
   justify-content: left;
   align-items: center;
   color: #fff; /* Text color for notifications */
-  position: absolute;
+  position: relative;
   top: 0px; /* Set y-coordinate */
   font-size: 14px; /* Adjust the font size as needed */
   white-space: pre; /* Preserve leading spaces */
@@ -40,8 +39,8 @@ body {
   height: 20px;
   background-color: #007bff; /* Blue color */
   border-radius: 50%; /* Makes it a circle */
-  position: absolute;
-  top: 50%; /* Vertically center */
+  position: sticky;
+  top: 45%; /* Vertically center */
   left: 50%; /* Horizontally center */
   transform: translate(-50%, 250%); /* Center the dot precisely */
 }
@@ -58,7 +57,7 @@ body {
   font-size: 16px;
   font-weight: bold;
   color: #333;
-  position: absolute;
+  position: sticky;
   left: 3px; /* Set x-coordinate */
   top: 245px; /* Set y-coordinate */
 }
@@ -75,7 +74,7 @@ body {
   font-size: 16px;
   font-weight: bold;
   color: #333;
-  position: absolute;
+  position: sticky;
   left: 3px; /* Set x-coordinate */
   top: 297px; /* Set y-coordinate */
 }
@@ -92,7 +91,7 @@ body {
   font-size: 16px;
   font-weight: bold;
   color: #333;
-  position: absolute;
+  position: sticky;
   left: 627px; /* Set x-coordinate */
   top: 297px; /* Set y-coordinate */
 }
@@ -109,7 +108,7 @@ body {
   font-size: 16px;
   font-weight: bold;
   color: #333;
-  position: absolute;
+  position: sticky;
   left: 627px; /* Set x-coordinate */
   top: 245px; /* Set y-coordinate */
 }

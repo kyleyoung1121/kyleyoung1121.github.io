@@ -5,7 +5,7 @@ import './PhoneVertical.css';
 
 function PhoneVertical() {
   return (
-    <div className="PhoneVertical">
+    <div className="phone-vertical">
 
         <div className="greeting">
           <p>Good Morning, Kyle!</p>

@@ -7,6 +7,8 @@ function PhoneHorizontal() {
   return (
     <div className="phone-horizontal">
 
+      <div className="notifications-bar"> 12:41</div>
+
       <div className="blue-dot"></div>
         <div className="eta-box">
           <p>12 min</p>
@@ -20,7 +22,7 @@ function PhoneHorizontal() {
         <div className="directions-box">
           <p>50 ft <span className="arrow">→</span></p>
         </div>
-        <div className="notifications-bar"> 12:41</div>
+        
 
     </div>
   );

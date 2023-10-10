@@ -1,5 +1,18 @@
 /* PhoneVertical.css */
 
+/* Style for the vertical phone */
+.phone-vertical {
+  width: 350px;
+  height: 705px;
+  background-color: #9370DB; /* Light purple background color */
+  border-radius: 15px;
+  border: 10px solid #333; /* Dark grey border */
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  margin: auto;
+  margin-bottom: 1%;
+}
+
 /* Style for the greeting text */
 .greeting {
   text-align: center;
