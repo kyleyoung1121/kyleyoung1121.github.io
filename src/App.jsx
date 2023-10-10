@@ -7,13 +7,13 @@ import PhoneVertical from './PhoneVertical'
 function App() {
 
   const [speed, setSpeed] = useState(0);
-  const distance = 0;
+  const [distance, setDistance] = useState(0);
 
 
   return (
     <div className="App">
-      <PhoneHorizontal speed={speed} distance={distance} />
-      <BikeHorizontal speed={speed} setSpeed={setSpeed} distance={distance} />
+      <PhoneHorizontal speed={speed} distance={distance} setDistance={setDistance}/>
+      <BikeHorizontal speed={speed} setSpeed={setSpeed}/>
       <PhoneVertical distance={distance} />
     </div>
   );
