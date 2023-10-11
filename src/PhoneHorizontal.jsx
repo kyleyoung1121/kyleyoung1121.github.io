@@ -4,19 +4,12 @@ import React, { useState, useEffect } from 'react';
 import './PhoneHorizontal.css';
 
 function PhoneHorizontal({speed, distance, setDistance}) {
+  
+  // Keep track of the map's y positioning, the time elapsed timer, and the time of day
   const [mapOffset, setMapOffset] = useState(0);
   const [timer, setTimer] = useState(0);
-  const [timeOfDay, setTimeOfDay] = useState('00:00'); // Initial value
+  const [timeOfDay, setTimeOfDay] = useState('00:00'); // Start at 00:00
   
-   // Update the time of day every second
-   useEffect(() => {
-    const interval = setInterval(() => {
-      setTimeOfDay(getCurrentTime());
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   // Helper function to format the current time as HH:MM
   function getCurrentTime() {
     const now = new Date();
@@ -25,7 +18,16 @@ function PhoneHorizontal({speed, distance, setDistance}) {
     return `${hours}:${minutes}`;
   }
 
-  // Update the timer every second
+  // Update the time of day every second
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTimeOfDay(getCurrentTime());
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  // Update the time elapsed
   useEffect(() => {
     const interval = setInterval(() => {
       setTimer((prevTimer) => (prevTimer + 1) % 3600); // 3600 seconds = 1 hour
@@ -34,34 +36,35 @@ function PhoneHorizontal({speed, distance, setDistance}) {
     return () => clearInterval(interval);
   }, []);
 
+  // Update the distance every 100ms if accelerator pressed
   useEffect(() => {
     let interval;
 
-    // Start the interval when the component mounts
     if (speed > 0) {
       interval = setInterval(() => {
         
-        // Update the distance based on speed (distance += speed / 10, assuming 0.1-second intervals)
+        // Update the distance
         const newDistance = distance + speed / 5;
         
+        // Force distance to fit inside certain bounds (causes simulation to repeat after ~400ft)
         const clampedDistance = newDistance > 190 ? 0 : newDistance;
 
-        // Update the map offset based on the new distance
+        // Update the map offset
         setMapOffset(clampedDistance);
 
-        // Update the distance state
+        // Update the distance
         setDistance(clampedDistance);
-      }, 100); // 100 milliseconds (0.1 seconds) interval
 
-      // Clear the interval when the component unmounts
+      }, 100); // 100 milliseconds
+
       return () => clearInterval(interval);
     }
   }, [speed, distance, setDistance]);
   
-  // Calculate the timer display in HH:MM format
+  // Get the timer display in HH:MM format
   const timerDisplay = `${String(Math.floor(timer / 60)).padStart(2, '0')}:${String(timer % 60).padStart(2, '0')}`;
 
-  
+  // Prepare a style that will move the background image according to distance
   const mapBackgroundStyle = {
     backgroundPositionY: `${-260+mapOffset}px`,
   };

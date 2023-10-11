@@ -1,19 +1,17 @@
 /* PhoneVertical.css */
 
-/* Style for the vertical phone */
 .phone-vertical {
   width: 350px;
   height: 705px;
-  background-color: #9370DB; /* Light purple background color */
+  background-color: #9370DB;
   border-radius: 15px;
-  border: 10px solid #333; /* Dark grey border */
+  border: 10px solid #333;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   margin: auto;
   position: relative;
 }
 
-/* Style for the greeting text */
 .greeting {
   text-align: center;
   margin-top: 30px;
@@ -22,19 +20,18 @@
   color: #fff;
 }
 
-/* Style for the graphic placeholders and goal text container */
 .goal-container {
-  background-color: #5c1fa1; /* Darker background color */
-  padding: 20px; /* Add some padding to the container */
+  background-color: #5c1fa1;
+  padding: 20px;
   height: 300px;
   text-align: center;
 }
 
 .goal-progess-cutout {
-  top: 100px; /* Adjust the top position as needed */
-  left: 15px; /* Adjust the left position as needed */
-  width: 633px; /* Set the initial width to 100% */
-  height: 633px; /* Set the height as needed */
+  top: 100px;
+  left: 15px;
+  width: 633px;
+  height: 633px;
   background-size: 50% 50%;
   background-image: url('src/assets/health_app_images/progress_bar_cutout.png');
   background-repeat: no-repeat;
@@ -43,10 +40,10 @@
 
 
 .goal-progess-spinner {
-  top: 100px; /* Adjust the top position as needed */
-  left: 15px; /* Adjust the left position as needed */
-  width: 633px; /* Set the initial width to 100% */
-  height: 633px; /* Set the height as needed */
+  top: 100px;
+  left: 15px;
+  width: 633px;
+  height: 633px;
   transform-origin: 160px 160px;
   background-image: url('src/assets/health_app_images/progress_bar_spinner.png');
   background-size: 50% 50%;
@@ -54,7 +51,6 @@
   position: absolute;
 }
 
-/* Style for the progress text */
 .progress-text {
   position: absolute;
   text-align: center;
@@ -66,10 +62,10 @@
 }
 
 .weekly-summary {
-  top: 435px; /* Adjust the top position as needed */
-  left: 4px; /* Adjust the left position as needed */
-  width: 977px; /* Set the initial width to 100% */
-  height: 430px; /* Set the height as needed */
+  top: 435px;
+  left: 4px;
+  width: 977px;
+  height: 430px;
   background-image: url('src/assets/health_app_images/weekly_summary.png');
   background-size: 35% 35%;
   background-repeat: no-repeat;
@@ -77,10 +73,10 @@
 }
 
 .previous-trip {
-  top: 591px; /* Adjust the top position as needed */
-  left: 4px; /* Adjust the left position as needed */
-  width: 977px; /* Set the initial width to 100% */
-  height: 325px; /* Set the height as needed */
+  top: 591px;
+  left: 4px;
+  width: 977px;
+  height: 325px;
   background-image: url('src/assets/health_app_images/previous_trip.png');
   background-size: 35% 35%;
   background-repeat: no-repeat;

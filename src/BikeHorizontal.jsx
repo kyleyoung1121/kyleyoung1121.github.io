@@ -3,31 +3,30 @@
 import React, { useState } from 'react';
 import './BikeHorizontal.css';
 
-
-
 function BikeHorizontal({speed, setSpeed, distance}) {
 
+  // Keep track of the headlights & music state
   const [headlightsOn, setHeadlightsOn] = useState(false);
   const [musicOn, setmusicOn] = useState(false);
 
-  // Function to toggle headlights on/off
+  // Toggle headlights on/off
   const toggleHeadlights = () => {
     setHeadlightsOn(!headlightsOn);
   };
 
-  // Function to toggle headlights on/off
+  // Toggle music on/off
   const toggleMusic = () => {
     setmusicOn(!musicOn);
   };
 
-  // Function to handle accelerator button press
+  // Set speed when accelerator pressed
   const handleAcceleratorPress = () => {
-    setSpeed(5); // Set speed to 5 when the accelerator button is pressed
+    setSpeed(5);
   };
 
-  // Function to handle accelerator button release
+  // Set speed when accelerator released
   const handleAcceleratorRelease = () => {
-    setSpeed(0); // Set speed to 0 when the accelerator button is released
+    setSpeed(0);
   };
   
   return (
