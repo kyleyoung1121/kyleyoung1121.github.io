@@ -6,10 +6,11 @@ import PhoneVertical from './PhoneVertical'
 
 function App() {
 
+  // Track state of speed and distance variable (used for simulation)
   const [speed, setSpeed] = useState(0);
   const [distance, setDistance] = useState(0);
 
-
+  // Taking care to be sure that the react modules have access to the speed & distance as needed
   return (
     <div className="App">
       <PhoneHorizontal speed={speed} distance={distance} setDistance={setDistance}/>

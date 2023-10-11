@@ -7,7 +7,7 @@ function PhoneVertical({distance}) {
 
   const progressPercentage = (distance / 6).toFixed(2);
 
-  // Define an inline style for rotation
+  // Prepare a style to rotate the progress spinner image
   const rotationStyle = {
     transform: `rotate(${progressPercentage*2.5+10}deg)`,
   };

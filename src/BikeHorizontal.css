@@ -8,79 +8,73 @@
   position: relative;
 }
 
-/* Style for the bike static UI image */
+/* General bike ui. All other graphics should be laid on top */
 .bike-static-ui {
   position: absolute;
-  top: 0px; /* Adjust the top position as needed */
-  left: 150px; /* Adjust the left position as needed */
-  width: 2338px; /* Adjust the width as needed */
-  height: 651px; /* Adjust the height as needed */
+  top: 0px;
+  left: 150px;
+  width: 2338px;
+  height: 651px;
   background-image: url('assets/bike_ui_parts/main_body.png');
   background-size: 65% 65%;
   background-repeat: no-repeat;
 }
 
-/* Style for the bike static UI image */
 .bike-battery {
-  position: absolute; /* Position the image absolutely within the container */
-  top: 381px; /* Adjust the top position as needed */
-  left: 656px; /* Adjust the left position as needed */
-  width: 62px; /* Adjust the width as needed */
-  height: 14px; /* Adjust the height as needed */
+  position: absolute; /* Allows for specific coords within container */
+  top: 381px;
+  left: 656px;
+  width: 62px;
+  height: 14px;
   background-image: url('assets/bike_ui_parts/battery_2.png');
   background-size: 65% 65%;
   background-repeat: no-repeat;
 }
 
-/* Style for the bike static UI image */
 .bike-headlights-on {
-  position: absolute; /* Position the image absolutely within the container */
-  top: 45px; /* Adjust the top position as needed */
-  left: 639px; /* Adjust the left position as needed */
-  width: 833px; /* Adjust the width as needed */
-  height: 31px; /* Adjust the height as needed */
+  position: absolute; /* Allows for specific coords within container */
+  top: 45px;
+  left: 639px;
+  width: 833px;
+  height: 31px;
   background-image: url('assets/bike_ui_parts/headlight-on.png');
   background-size: 65% 65%;
   background-repeat: no-repeat;
 }
 
-/* Style for the bike static UI image */
 .bike-headlights-off {
-  position: absolute; /* Position the image absolutely within the container */
-  top: 45px; /* Adjust the top position as needed */
-  left: 639px; /* Adjust the left position as needed */
-  width: 833px; /* Adjust the width as needed */
-  height: 31px; /* Adjust the height as needed */
+  position: absolute; /* Allows for specific coords within container */
+  top: 45px;
+  left: 639px;
+  width: 833px;
+  height: 31px;
   background-image: url('assets/bike_ui_parts/headlight-off.png');
   background-size: 65% 65%;
   background-repeat: no-repeat;
 }
 
-/* Style for the bike static UI image */
 .bike-headlights-button {
-  position: absolute; /* Position the image absolutely within the container */
-  top: 22px; /* Adjust the top position as needed */
-  left: 1110px; /* Adjust the left position as needed */
-  width: 85px; /* Adjust the width as needed */
-  height: 35px; /* Adjust the height as needed */
+  position: absolute; /* Allows for specific coords within container */
+  top: 22px;
+  left: 1110px;
+  width: 85px;
+  height: 35px;
   background-image: url('assets/bike_ui_parts/headlight_button.png');
   background-size: 65% 65%;
   background-repeat: no-repeat;
   opacity: 1;
 }
 
-/* Style for the bike static UI image */
 .bike-headlights-button:hover {
   opacity: 0.8;
 }
 
-/* Style for the bike static UI image */
 .bike-music-button {
-  position: absolute; /* Position the image absolutely within the container */
-  top: 381px; /* Adjust the top position as needed */
-  left: 1110px; /* Adjust the left position as needed */
-  width: 85px; /* Adjust the width as needed */
-  height: 35px; /* Adjust the height as needed */
+  position: absolute; /* Allows for specific coords within container */
+  top: 381px;
+  left: 1110px;
+  width: 85px;
+  height: 35px;
   background-image: url('assets/bike_ui_parts/music_button.png');
   background-size: 65% 65%;
   background-repeat: no-repeat;
@@ -90,8 +84,10 @@
   opacity: 0.8;
 }
 
-/* Style for the white square box */
 .bike-music-text {
+  position: absolute; /* Allows for specific coords within container */
+  top: 400px;
+  left: 1050px;
   width: 175px;
   height: 50px;
   border-radius: 5px;
@@ -101,57 +97,51 @@
   font-size: 20px;
   font-weight: bold;
   color: #0f0f0f;
-  position: absolute;
-  left: 1050px; /* Set x-coordinate */
-  top: 400px; /* Set y-coordinate */
 }
 
 .bike-music-text-hidden {
   font-size: 0px;
 }
 
-/* Style for the bike static UI image */
 .bike-gear-indicator {
-  position: absolute; /* Position the image absolutely within the container */
-  top: 195px; /* Adjust the top position as needed */
-  left: 1280px; /* Adjust the left position as needed */
-  width: 30px; /* Adjust the width as needed */
-  height: 30px; /* Adjust the height as needed */
+  position: absolute; /* Allows for specific coords within container */
+  top: 195px;
+  left: 1280px;
+  width: 30px;
+  height: 30px;
   background-image: url('assets/bike_ui_parts/gear_indicator.png');
   background-size: 65% 65%;
   background-repeat: no-repeat;
 }
 
-/* Style for the bike static UI image */
 .bike-speedometer-0 {
-  position: absolute; /* Position the image absolutely within the container */
-  top: 185px; /* Adjust the top position as needed */
-  left: 1068px; /* Adjust the left position as needed */
-  width: 73px; /* Adjust the width as needed */
-  height: 120px; /* Adjust the height as needed */
+  position: absolute; /* Allows for specific coords within container */
+  top: 185px;
+  left: 1068px;
+  width: 73px;
+  height: 120px;
   background-size: 65% 65%;
   background-repeat: no-repeat;
   background-image: url('assets/bike_ui_parts/zero.png');
 }
 
 .bike-speedometer-5 {
-  position: absolute; /* Position the image absolutely within the container */
-  top: 185px; /* Adjust the top position as needed */
-  left: 1068px; /* Adjust the left position as needed */
-  width: 73px; /* Adjust the width as needed */
-  height: 120px; /* Adjust the height as needed */
+  position: absolute; /* Allows for specific coords within container */
+  top: 185px;
+  left: 1068px;
+  width: 73px;
+  height: 120px;
   background-size: 65% 65%;
   background-repeat: no-repeat;
   background-image: url('assets/bike_ui_parts/five.png');
 }
 
-/* Style for the bike static UI image */
 .bike-brakes {
-  position: absolute; /* Position the image absolutely within the container */
-  top: 303px; /* Adjust the top position as needed */
-  left: 482px; /* Adjust the left position as needed */
-  width: 221px; /* Adjust the width as needed */
-  height: 168px; /* Adjust the height as needed */
+  position: absolute; /* Allows for specific coords within container */
+  top: 303px;
+  left: 482px;
+  width: 221px;
+  height: 168px;
   background-image: url('assets/bike_ui_parts/brakes.png');
   background-size: 65% 65%;
   background-repeat: no-repeat;
@@ -161,13 +151,12 @@
   opacity: 0.8;
 }
 
-/* Style for the bike static UI image */
 .bike-accelerate {
-  position: absolute; /* Position the image absolutely within the container */
-  top: 303px; /* Adjust the top position as needed */
-  left: 1193px; /* Adjust the left position as needed */
-  width: 221px; /* Adjust the width as needed */
-  height: 168px; /* Adjust the height as needed */
+  position: absolute; /* Allows for specific coords within container */
+  top: 303px;
+  left: 1193px;
+  width: 221px;
+  height: 168px;
   background-image: url('assets/bike_ui_parts/accelerate.png');
   background-size: 65% 65%;
   background-repeat: no-repeat;
